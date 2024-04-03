@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+.main-container {
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+.nav-class {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    padding: 20px;
+
+}
+.logo {
+    object-fit: cover;
+}
+.im1 {
+    height: 60px;
+    width: 60px;
+}
+.uorder-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 30px;
+}
+.list-item {
+   
+    list-style-type: none;
+    
+}
+.item {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.item:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+    
+}
+.checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+#check {
+    display: none;
+}
+.icon-sizes {
+display: flex;
+gap: 15px;
+}
+.circle-shape {
+    display: flex;
+    justify-content: center;
+     height: 30px;
+      width: 30px;
+   border-radius: 50%;
+   border: 1px solid black;
+   padding: 5px;
+   align-items: center;
+}
+
+
+.container1 {
+    background-color: #B2B2B2;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont {
+   
+    background-image: url("images/heroimg.jpg");
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+.button {
+    position: absolute;
+
+}
+.sub-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px 20px 20px;
+}
+.para {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    line-height: 22px;
+}
+.container2 {
+    background-color: #DAD6DF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    padding: 40px;
+}
+.heading {
+  
+    display: flex;
+    align-self: flex-start;
+    font-size: 25px;
+    font-weight: bold;
+}
+.grid-container {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 20px;
+ width: 100%;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.i1 {
+    height: 100%;
+    width: 100%;
+}
+.p1 {
+    font-weight: bold;
+    font-size: 16px;
+}
+.p2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.p3 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+.par1 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+.par2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+}
+.par3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+
+}
+.button1 {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    white-space: nowrap;
+}
+.button2 {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    white-space: nowrap;
+}
+.button3 {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    white-space: nowrap;
+}
+@media screen and (max-width:1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+       
+       }
+       .sub-container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding:  15px;
+    }
+    .uorder-items {
+        display: none;
+    }
+    .icon-sizes {
+        display: none;
+    }
+  
+ .logo {
+    padding-left: 50px;
+ }
+ .item {
+    font-size: 18px;
+ }
+ .checkbtn {
+    display: block;
+ }
+ .uorder-items {
+    
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    top: 80px;
+    left: 0px;
+    text-align: center;
+ }
+ #check:checked ~ ul {
+    left: 0px;
+ }
+nav ul li {
+    display: block;
+}
+
+}
+
+@media screen and (max-width:480px) {
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+       
+       }
+
+       .p1 {
+        text-align: center;
+       }
+       .p3 {
+        text-align: center;
+
+       }
+       .para1 {
+        text-align: center;
+       }
+       .para3 {
+        text-align: center;
+       }
+       .button1 {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+       }
+       .button3 {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+       }
+       .button2 {
+        width: 100%;
+        padding: 10px;
+       }
+       .card {
+        gap: 10px;
+       }
+       .heading {
+        font-size: 18px;
+       }
+       .sub-container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding:  10px;
+    }
+    .uorder-items {
+        display: none;
+    }
+    .icon-sizes {
+        display: none;
+    }
+ 
+
+
+}
