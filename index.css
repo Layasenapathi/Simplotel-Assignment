@@ -99,7 +99,8 @@ gap: 15px;
     position: absolute;
     bottom: 40px;
     left: 40px;
-    background-color: #656565;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(102,106,107,1) 100%);
     color: white;
     border-radius: 6px;
     padding: 10px 50px;
@@ -302,7 +303,7 @@ nav ul li {
    }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     .nav-class {
         padding:0px 20px 0px 20px ;
     }
