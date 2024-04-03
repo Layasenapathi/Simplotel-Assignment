@@ -318,7 +318,7 @@ nav ul li {
   
     .grid-container {
         grid-template-columns: repeat(1,1fr);
-        gap: 10px;
+      
        
        }
 
@@ -349,9 +349,9 @@ nav ul li {
         width: 100%;
         padding: 10px;
        }
-       .card {
-        gap: 20px;
-       }
+      .card {
+        gap: 10px;
+      }
        .heading {
         font-size: 18px;
        }
